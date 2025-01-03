@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import React from 'react'
-import { CiTwitter } from 'react-icons/ci'
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 
 const page = () => {
