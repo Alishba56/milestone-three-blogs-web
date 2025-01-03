@@ -2,26 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.slider {
+    @apply flex justify-center items-center;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  
+  .sliderContainer {
+    @apply flex overflow-x-auto scroll-smooth;
   }
-}
+  
+  .slide {
+    @apply flex-shrink-0 mr-4;
+  }
+  
+  .active {
+    @apply opacity-100 scale-105 transition-transform duration-300 ease-in-out;
+  }
